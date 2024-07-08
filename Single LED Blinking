@@ -1,0 +1,14 @@
+void setup(){
+Serial.begin(9600);
+pinMode(10,OUTPUT);
+}
+
+  void loop(){
+ 
+    for(int a=0;a<256;a++){
+      analogWrite(10,a);
+      delay(1000);
+      analogWrite(10,0);
+      delay(1000);
+    }
+  }
