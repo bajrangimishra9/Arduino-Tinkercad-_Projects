@@ -1,0 +1,63 @@
+void setup() {
+ pinMode(2,OUTPUT); //red 1
+ pinMode(3,OUTPUT); //yellow 1
+ pinMode(4,OUTPUT); //green 1
+ pinMode(5,OUTPUT); // red 2
+ pinMode(6,OUTPUT); //yellow 2
+ pinMode(7,OUTPUT); //green 2
+ pinMode(8,OUTPUT); //red 3
+ pinMode(9,OUTPUT); //yellow 3
+ pinMode(10,OUTPUT); //green 3
+ pinMode(11,OUTPUT); //red 4
+ pinMode(12,OUTPUT); //yellow 4
+ pinMode(13,OUTPUT); //green 4
+ 
+}
+void Right(){
+  
+     digitalWrite(2, HIGH);
+     digitalWrite(7,HIGH );
+     digitalWrite(8, HIGH);
+     digitalWrite(11, HIGH);
+     delay(2000);
+     digitalWrite(6,HIGH );
+     delay(1000);
+     digitalWrite(7,LOW );
+     delay(1000);
+     digitalWrite(6,LOW);
+     delay(1000);
+}
+void Straight(){
+     digitalWrite(8, LOW);
+     digitalWrite(2,HIGH);
+     digitalWrite(5,HIGH);
+     digitalWrite(11, HIGH);
+     digitalWrite(10, HIGH);
+     delay(2000);
+     digitalWrite(10,LOW );
+     delay(1000);
+     digitalWrite(9,HIGH);
+     delay(1000);
+     digitalWrite(9,LOW);
+     delay(1000);
+}
+void Left(){
+       digitalWrite(11,LOW);
+     digitalWrite(2,HIGH);
+     digitalWrite(5,HIGH);
+     digitalWrite(8, HIGH);
+     digitalWrite(13, HIGH);
+     delay(2000);
+     digitalWrite(13,LOW );
+     delay(1000);
+     digitalWrite(12,HIGH);
+     delay(1000);
+     digitalWrite(12,LOW);
+     delay(1000);
+}
+void loop()
+{
+  Right();
+Straight();
+  Left();
+}
