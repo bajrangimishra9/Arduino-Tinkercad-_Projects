@@ -1,3 +1,4 @@
+// With the help of analogue pins
 void setup(){
 Serial.begin(9600);
 pinMode(10,OUTPUT);
@@ -9,6 +10,23 @@ pinMode(10,OUTPUT);
       analogWrite(10,a);
       delay(1000);
       analogWrite(10,0);
+      delay(1000);
+    }
+  }
+
+
+------------------------------------------------------------
+// Through Digital Pin
+Int yellow = 10;
+void setup(){
+pinMode(yellow,OUTPUT);
+}
+
+  void loop(){
+ 
+      digitalWrite(yellow, HIGH);
+      delay(1000);
+      digitalWrite(yellow,LOW);
       delay(1000);
     }
   }
