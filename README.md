@@ -1,2 +1,2 @@
 # **Thapar Summer School**
-# Arduino-Tinkercad-Projects
+**Arduino-Tinkercad-Projects**
