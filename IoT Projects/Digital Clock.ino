@@ -18,9 +18,9 @@ void loop() {
     m=0;
     h=h+1;
   }
-   lcd1.print("SHANTNU");
+   lcd1.print("Bajrangi");
   lcd1.setCursor(0,1);
-  lcd1.print("MAHESHWARI");
+  lcd1.print("Mishra");
   lcd.print("HOURS=");
   lcd.print(h);
   lcd.setCursor(10,0);
